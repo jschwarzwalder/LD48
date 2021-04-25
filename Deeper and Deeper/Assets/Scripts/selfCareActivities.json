@@ -1,0 +1,15 @@
+{
+    "selfCareActivities": [{
+        "name": "Pursed Breath", 
+        "timeMinutes": "5",
+        "timeSeconds": "0",
+        "pathToAudio": "none"
+    }, 
+    {
+        "name": "Guided Muscle Relaxation", 
+        "timeMinutes": "10",
+        "timeSeconds": "0",
+        "pathToAudio": "none"
+    }
+    ]
+}
