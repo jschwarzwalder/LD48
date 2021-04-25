@@ -10,10 +10,10 @@ public class SelfCareActivityLoader : MonoBehaviour
     [SerializeField] private string pathToActivityList;
 
     void Start() {
-           LoadActivities();
+           
     }
 
-    private void LoadActivities() {
+    public void LoadActivities() {
         using (StreamReader stream = new StreamReader(pathToActivityList))
         {
             string json = stream.ReadToEnd();
