@@ -1072,6 +1072,7 @@ GameObject:
   - component: {fileID: 1493247125}
   - component: {fileID: 1493247124}
   - component: {fileID: 1493247123}
+  - component: {fileID: 1493247127}
   m_Layer: 5
   m_Name: Timer
   m_TagString: Untagged
@@ -1159,6 +1160,21 @@ RectTransform:
   m_AnchoredPosition: {x: 10, y: 2}
   m_SizeDelta: {x: 1269, y: 538}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1493247127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1493247122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c832287278cd5614a9e5e601476a91c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minutes: 10
+  seconds: 0
+  displayTimer: {fileID: 1042850555}
 --- !u!1 &1759161271
 GameObject:
   m_ObjectHideFlags: 0
