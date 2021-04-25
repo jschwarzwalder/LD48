@@ -1,0 +1,17 @@
+Use Activity Data to display on Timer and other environments
+Set up Level Text box
+Increase Level after Activity
+Display Level
+Play Audio background
+Play Audio Guided Recording
+Get Random Activity from List
+Select an actual Random Activity from List
+Fix Camera Control
+Record Self Care Guided ...
+Volume Control for Music and for Recordings 
+
+
+Zip up Game
+Upload
+Host on Itch.io
+
