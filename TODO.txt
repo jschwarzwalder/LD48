@@ -1,12 +1,10 @@
 
-
-Play Audio Guided Recording
-
 Select an actual Random Activity from List
 Fix Camera Control
 
 x Increase Level after Activity
 X Display Level
+X Play Audio Guided Recording
 x Get "Random" Activity from ListCollection
 x Use Activity Data to display on Timer and other environments
 X Update JSON for all of the recorded guided activities

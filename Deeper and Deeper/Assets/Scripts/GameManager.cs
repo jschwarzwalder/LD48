@@ -11,23 +11,31 @@ public class GameManager : MonoBehaviour
     [SerializeField] float coolDownTime;
     [SerializeField] Text activityName;
     [SerializeField] Text levelDisplay;
+    [SerializeField] AudioSource guidedInstructionsSource;
     [SerializeField] SelfCareActivityLoader selfCareActivities;
+    [SerializeField] AudioClip[] guidedInstructions;
     
     private float remainingTime;
     private bool timerActive = false;
     private bool coolDown = false;
+    private Dictionary<string, AudioClip> guidedInstructionsMap = new Dictionary<string, AudioClip>();
 
     // Start is called before the first frame update
     void Start()
     {
         selfCareActivities.LoadActivities();
         currentLevel = 0;
-        remainingTime  = 2 * 60;
+        remainingTime  = 30;
         timerActive = false;
         coolDown = true;
         timer.GetComponent<Timer>().DisplayText("Welcome!");
         levelDisplay.text = "Complete Self Care Activities to gain levels.";
         levelDisplay.fontSize = 24;
+        foreach (AudioClip audio in guidedInstructions) {
+            Debug.Log(string.Format("Adding AudioClip {0} to Map", audio.name));
+            guidedInstructionsMap.Add(audio.name, audio); 
+        }
+
     }
 
     // Update is called once per frame
@@ -58,11 +66,13 @@ public class GameManager : MonoBehaviour
                 SelfCareActivity activity =  selfCareActivities.GetRandomActivity();
                 activityName.text = activity.name;
                 remainingTime = float.Parse(activity.timeMinutes) * 60 +  float.Parse(activity.timeSeconds);
+                guidedInstructionsSource.clip = guidedInstructionsMap[activity.pathToAudio];
                 timerActive = true;
                 coolDown = false;
                 currentLevel += 1;
                 levelDisplay.fontSize = 36;
                 levelDisplay.text = string.Format("Level {0}", currentLevel.ToString());
+                guidedInstructionsSource.Play();
                }
             }   
         }

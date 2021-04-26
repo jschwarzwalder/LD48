@@ -3,84 +3,84 @@
         "name": "Guided Grounding", 
         "timeMinutes": "4",
         "timeSeconds": "40",
-        "pathToAudio": "Assets/Audio/Activities/Chair support.mp3"
+        "pathToAudio": "Chair support"
     }, {
         "name": "Pursed Breath", 
         "timeMinutes": "5",
         "timeSeconds": "0",
-        "pathToAudio": "Assets/Audio/Activities/Pursed Lips Breathing.mp3"
+        "pathToAudio": "Pursed Lips Breathing"
     }, 
     {
         "name": "Guided Muscle Relaxation", 
         "timeMinutes": "9",
         "timeSeconds": "0",
-        "pathToAudio": "Assets/Audio/Activities/Muscle relaxation.mp3"
+        "pathToAudio": "Muscle relaxation"
     }, 
     {
         "name": "Inhale 4 short and 1 long", 
         "timeMinutes": "5",
         "timeSeconds": "0",
-        "pathToAudio": "Assets/Audio/Activities/4 short inhales with one long inhale.mp3"
+        "pathToAudio": "4 short inhales with one long inhale"
     }, 
     {
         "name": "Face Relaxation", 
         "timeMinutes": "5",
         "timeSeconds": "30",
-        "pathToAudio": "Assets/Audio/Activities/Face waggle.mp3"
+        "pathToAudio": "Face waggle"
     }, 
     {
         "name": "Extended Exhale Breath", 
         "timeMinutes": "7",
         "timeSeconds": "0",
-        "pathToAudio": "Assets/Audio/Activities/Inhale Exhale extended Breath.mp3"
+        "pathToAudio": "Inhale Exhale extended Breath"
     }, 
     {
         "name": "Body Scan", 
         "timeMinutes": "6",
         "timeSeconds": "0",
-        "pathToAudio": "Assets/Audio/Activities/Body scan.mp3"
+        "pathToAudio": "Body scan"
     }, 
     {
         "name": "Forest Visualization", 
         "timeMinutes": "10",
         "timeSeconds": "45",
-        "pathToAudio": "Assets/Audio/Activities/Forest Visualize.mp3"
+        "pathToAudio": "Forest Visualize"
     }, 
     {
         "name": "Drink Water", 
         "timeMinutes": "5",
         "timeSeconds": "2",
-        "pathToAudio": "Assets/Audio/Activities/Drink Water.mp3"
+        "pathToAudio": "Drink Water"
     }, 
     {
         "name": "4 7 8 Breath", 
         "timeMinutes": "6",
         "timeSeconds": "0",
-        "pathToAudio": "Assets/Audio/Activities/4 7 8 Breath.mp3"
+        "pathToAudio": "4 7 8 Breath"
     }, 
     {
         "name": "Circles", 
         "timeMinutes": "11",
         "timeSeconds": "0",
-        "pathToAudio": "Assets/Audio/Activities/Circle drawing.mp3"
+        "pathToAudio": "Circle drawing"
     }, 
     {
         "name": "Cat Cow", 
         "timeMinutes": "9",
         "timeSeconds": "0",
-        "pathToAudio": "Assets/Audio/Activities/Cat cow.mp3"
+        "pathToAudio": "Cat cow"
     }, 
     {
         "name": "Neck Stretches", 
         "timeMinutes": "7",
         "timeSeconds": "0",
-        "pathToAudio": "Assets/Audio/Activities/Neck stretches.mp3"
+        "pathToAudio": "Neck stretches"
     }, 
     {
         "name": "Alternative Nostril Breathing", 
         "timeMinutes": "5",
         "timeSeconds": "0",
-        "pathToAudio": "Assets/Audio/Activities/Alternative Nostril Breathing.mp3"
+        "pathToAudio": "Alternative Nostril Breathing"
     }
     ]
 }
