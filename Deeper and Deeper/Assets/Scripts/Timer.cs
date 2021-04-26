@@ -29,4 +29,8 @@ public class Timer : MonoBehaviour
 
         displayTimer.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
+
+    public void DisplayText(string message){
+        displayTimer.text = string.Format(message);
+    }
 }

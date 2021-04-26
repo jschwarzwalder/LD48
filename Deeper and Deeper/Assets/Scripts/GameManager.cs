@@ -25,6 +25,9 @@ public class GameManager : MonoBehaviour
         remainingTime  = 2 * 60;
         timerActive = false;
         coolDown = true;
+        timer.GetComponent<Timer>().DisplayText("Welcome!");
+        levelDisplay.text = "Complete Self Care Activities to gain levels.";
+        levelDisplay.fontSize = 24;
     }
 
     // Update is called once per frame
@@ -35,11 +38,14 @@ public class GameManager : MonoBehaviour
              if (remainingTime > 0)
             {
                 remainingTime -= Time.deltaTime;
+                 if (timerActive){
+                    timer.GetComponent<Timer>().DisplayTime(remainingTime);
+                } else {
+                    timer.GetComponent<Timer>().DisplayText("Waiting for Next Activity");
+                }
             }
             
-             if (timerActive){
-                    timer.GetComponent<Timer>().DisplayTime(remainingTime);
-                }
+            
             else
             {
                if (timerActive){
@@ -55,6 +61,7 @@ public class GameManager : MonoBehaviour
                 timerActive = true;
                 coolDown = false;
                 currentLevel += 1;
+                levelDisplay.fontSize = 36;
                 levelDisplay.text = string.Format("Level {0}", currentLevel.ToString());
                }
             }   

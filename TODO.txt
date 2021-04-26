@@ -1,11 +1,14 @@
-Use Activity Data to display on Timer and other environments
-Increase Level after Activity
-Display Level
+
+
 Play Audio Guided Recording
-Get "Random" Activity from ListCollection
+
 Select an actual Random Activity from List
 Fix Camera Control
 
+x Increase Level after Activity
+X Display Level
+x Get "Random" Activity from ListCollection
+x Use Activity Data to display on Timer and other environments
 X Update JSON for all of the recorded guided activities
 X Set up Level Text box
 X Play Audio background
