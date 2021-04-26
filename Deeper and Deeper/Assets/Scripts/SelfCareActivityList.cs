@@ -7,7 +7,7 @@ public class SelfCareActivityList {
     
     public SelfCareActivity[] selfCareActivities;
 
-    SelfCareActivity GetRandomActivity(){
+    public SelfCareActivity GetRandomActivity(){
         
         return selfCareActivities[0];
     }

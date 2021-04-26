@@ -9,34 +9,18 @@ public class Timer : MonoBehaviour
     [SerializeField] float seconds = 0;
     [SerializeField] Text displayTimer;
     private float remainingTime ;
-    private bool timerActive = false;
 
     void Start() {
         remainingTime = minutes * 60 + seconds;
-        timerActive = true;
+        
     }
 
     void Update()
     {
-       if (timerActive)
-        {
-             if (remainingTime > 0)
-            {
-                remainingTime -= Time.deltaTime;
-            }
-            
-            else
-            {
-                timerActive = false;
-                remainingTime = 0;
-                Debug.Log("Time has run out!");
-            }
-
-                DisplayTime(remainingTime);
-        }
+      
     }
 
-    void DisplayTime(float remainingTimeDisplayed)
+    public void DisplayTime(float remainingTimeDisplayed)
     {
         remainingTimeDisplayed += 1;
         

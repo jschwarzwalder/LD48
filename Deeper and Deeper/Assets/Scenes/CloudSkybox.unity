@@ -1016,9 +1016,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4687d3c0da12574bb901b3bfe39f47a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Timer: {fileID: 1493247122}
-  ActivityName: {fileID: 314521951}
-  LevelDisplay: {fileID: 1410562228}
+  timer: {fileID: 1493247122}
+  activityName: {fileID: 314521951}
+  levelDisplay: {fileID: 1410562228}
   selfCareActivities: {fileID: 701635978}
 --- !u!82 &701635981
 AudioSource:

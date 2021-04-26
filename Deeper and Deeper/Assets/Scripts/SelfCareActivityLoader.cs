@@ -23,4 +23,8 @@ public class SelfCareActivityLoader : MonoBehaviour
         Debug.Log("ACTIVITIES LOADED : " + selfCareActivityList.selfCareActivities.Length);
         Debug.Log(selfCareActivityList.ToString());
     }
+
+    public SelfCareActivity GetRandomActivity(){
+        return selfCareActivityList.GetRandomActivity();
+    }
 }
