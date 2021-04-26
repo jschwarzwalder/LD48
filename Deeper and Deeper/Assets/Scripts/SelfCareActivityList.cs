@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System;
+using UnityEngine;
 
 [Serializable]
 public class SelfCareActivityList {
@@ -9,7 +10,7 @@ public class SelfCareActivityList {
 
     public SelfCareActivity GetRandomActivity(){
         
-        return selfCareActivities[0];
+        return selfCareActivities[UnityEngine.Random.Range(0, selfCareActivities.Length)];
     }
 
     public override string ToString() {
@@ -22,4 +23,4 @@ public class SelfCareActivityList {
 
         return activityPrint;
     }
-}
+}   

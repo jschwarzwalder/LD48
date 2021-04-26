@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/CloudSkybox.unity
+    guid: 6a96b378f9cc5f44286e85731d96f67e
   m_configObjects: {}
