@@ -5,12 +5,19 @@ using System.Collections.Generic;
 public class CameraMovement : MonoBehaviour {
 
     [SerializeField] float moveSpeed = 0.5f;
-    [SerializeField] float scrollSpeed = 10f;
+    [SerializeField] float rotateSpeed = 0.5f;
+    [SerializeField] CharacterController controller;
     [SerializeField] float maxX;
     [SerializeField] float minX;
     [SerializeField] float maxZ;
     [SerializeField] float minZ;
     bool withinRoom;
+    Vector3 playerVelocity;
+
+     private void Start()
+    {
+        controller = gameObject.AddComponent<CharacterController>();
+    }
 
     void Update () {
 
@@ -21,15 +28,13 @@ public class CameraMovement : MonoBehaviour {
 
         if (withinRoom){
 
-            if (Input.GetAxisRaw("Horizontal") != 0 || Input.GetAxisRaw("Vertical") != 0) {
-                transform.position += moveSpeed * new Vector3(Input.GetAxisRaw("Vertical"), 0, Input.GetAxisRaw("Horizontal"));
+           
+            if (Input.GetAxisRaw("Horizontal") != 0) {
+                //Rotate Player
+                transform.Rotate(0, Input.GetAxis("Horizontal"), 0);
             }
 
-            if (Input.GetAxis("Mouse ScrollWheel") != 0) {
-                transform.position += scrollSpeed * new Vector3(0, -Input.GetAxis("Mouse ScrollWheel"), 0);
-            } 
-        }
-         else {
+        } else {
               if (transform.position.x < minX) {
                   position.x = minX + .1f;
               } 
